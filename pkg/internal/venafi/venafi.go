@@ -17,15 +17,15 @@ limitations under the License.
 package venafi
 
 import (
+	"crypto/tls"
 	"fmt"
-	"time"
-
 	"github.com/Venafi/vcert"
 	"github.com/Venafi/vcert/pkg/certificate"
 	"github.com/Venafi/vcert/pkg/endpoint"
-	corelisters "k8s.io/client-go/listers/core/v1"
-
 	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha2"
+	corelisters "k8s.io/client-go/listers/core/v1"
+	"net/http"
+	"time"
 )
 
 const (
@@ -108,6 +108,16 @@ func configForIssuer(iss cmapi.GenericIssuer, secretsLister corelisters.SecretLi
 			caBundle = string(tpp.CABundle)
 		}
 
+		tr := &http.Transport{
+			TLSClientConfig: &tls.Config{
+				Renegotiation: tls.RenegotiateFreelyAsClient,
+			},
+		}
+
+		client := &http.Client{
+			Transport: tr,
+		}
+
 		return &vcert.Config{
 			ConnectorType: endpoint.ConnectorTypeTPP,
 			BaseUrl:       tpp.URL,
@@ -119,6 +129,7 @@ func configForIssuer(iss cmapi.GenericIssuer, secretsLister corelisters.SecretLi
 				User:     string(username),
 				Password: string(password),
 			},
+			Client: client,
 		}, nil
 
 	case venCfg.Cloud != nil:

@@ -1543,8 +1543,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "github.com/smartystreets/goconvey",
-        sum = "h1:pa8hGb/2YqsZKovtsgrwcDH1RZhVbTKCjLp47XpqCDs=",
-        version = "v0.0.0-20190330032615-68dc04aab96a",
+        sum = "h1:fv0U8FUIMPNf1L9lnHLvLhgicrIVChEkdzIKYqbNC9s=",
+        version = "v1.6.4",
     )
     go_repository(
         name = "com_github_soheilhy_cmux",
@@ -1647,8 +1647,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "github.com/Venafi/vcert",
-        sum = "h1:Vy4WHFF6SULSubt7vuyJRJ5AqwjJXzJQWdF37VcsyGo=",
-        version = "v0.0.0-20190613103158-62139eb19b25",
+        sum = "h1:NJAdo/WFLH379JH6d4OtLkrsYFithHfBEn0DNTUm3YE=",
+        version = "v0.0.0-20191221002246-e3ef066044b1",
     )
     go_repository(
         name = "com_github_xiang90_probing",
@@ -1719,8 +1719,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "gopkg.in/ini.v1",
-        sum = "h1:7N3gPTt50s8GuLortA00n8AqRTk75qOP98+mTPpgzRk=",
-        version = "v1.42.0",
+        sum = "h1:GyboHr4UqMiLUybYjd22ZjQIKEJEpgtLXtuGbR21Oho=",
+        version = "v1.51.1",
     )
     go_repository(
         name = "in_gopkg_mgo_v2",

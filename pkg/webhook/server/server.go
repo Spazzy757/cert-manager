@@ -138,6 +138,7 @@ func (s *Server) Run(stopCh <-chan struct{}) error {
 		s.Log.Info("listening for secure connections", "address", s.ListenAddr)
 		certSourceChan = s.startCertificateSource(internalStopCh)
 		l = tls.NewListener(l, &tls.Config{
+			Renegotiation:            tls.RenegotiateFreelyAsClient,
 			GetCertificate:           s.CertificateSource.GetCertificate,
 			MinVersion:               tls.VersionTLS12,
 			PreferServerCipherSuites: true,
