@@ -110,7 +110,8 @@ func configForIssuer(iss cmapi.GenericIssuer, secretsLister corelisters.SecretLi
 
 		tr := &http.Transport{
 			TLSClientConfig: &tls.Config{
-				Renegotiation: tls.RenegotiateFreelyAsClient,
+				Renegotiation:      tls.RenegotiateFreelyAsClient,
+				InsecureSkipVerify: true,
 			},
 		}
 
