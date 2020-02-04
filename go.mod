@@ -13,7 +13,7 @@ require (
 	github.com/Azure/go-autorest/autorest/adal v0.5.0
 	github.com/Azure/go-autorest/autorest/to v0.3.0
 	github.com/Azure/go-autorest/autorest/validation v0.2.0 // indirect
-	github.com/Venafi/vcert v0.0.0-00010101000000-000000000000
+	github.com/Spazzy757/vcert v0.0.0-20200204120343-5b3d974663b5
 	github.com/aws/aws-sdk-go v1.24.1
 	github.com/cloudflare/cloudflare-go v0.8.5
 	github.com/cpu/goacmedns v0.0.0-20180701200144-565ecf2a84df
@@ -44,7 +44,7 @@ require (
 	golang.org/x/net v0.0.0-20191004110552-13f9640d40b9
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 	google.golang.org/api v0.4.0
-	gopkg.in/ini.v1 v1.51.1 // indirect
+	gopkg.in/ini.v1 v1.52.0 // indirect
 	k8s.io/api v0.17.0
 	k8s.io/apiextensions-apiserver v0.17.0
 	k8s.io/apimachinery v0.17.0
@@ -61,5 +61,3 @@ require (
 	sigs.k8s.io/controller-tools v0.2.2
 	sigs.k8s.io/testing_frameworks v0.1.1
 )
-
-replace github.com/Venafi/vcert => github.com/Spazzy757/vcert v0.0.0-20200128092924-c53c4b125dbe

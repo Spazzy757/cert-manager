@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Venafi/vcert/pkg/endpoint"
+	"github.com/Spazzy757/vcert/pkg/endpoint"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

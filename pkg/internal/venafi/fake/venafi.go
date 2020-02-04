@@ -19,7 +19,7 @@ package fake
 import (
 	"time"
 
-	"github.com/Venafi/vcert/pkg/endpoint"
+	"github.com/Spazzy757/vcert/pkg/endpoint"
 )
 
 type Venafi struct {

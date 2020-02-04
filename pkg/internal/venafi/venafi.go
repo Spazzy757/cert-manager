@@ -19,9 +19,9 @@ package venafi
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/Venafi/vcert"
-	"github.com/Venafi/vcert/pkg/certificate"
-	"github.com/Venafi/vcert/pkg/endpoint"
+	"github.com/Spazzy757/vcert"
+	"github.com/Spazzy757/vcert/pkg/certificate"
+	"github.com/Spazzy757/vcert/pkg/endpoint"
 	cmapi "github.com/jetstack/cert-manager/pkg/apis/certmanager/v1alpha2"
 	corelisters "k8s.io/client-go/listers/core/v1"
 	"net/http"

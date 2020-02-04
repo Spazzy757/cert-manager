@@ -1643,12 +1643,12 @@ def go_repositories():
         version = "v0.0.0-20181204163529-d75b2dcb6bc8",
     )
     go_repository(
-        name = "com_github_venafi_vcert",
+        name = "com_github_spazzy757_vcert",
         build_file_generation = "on",
         build_file_proto_mode = "disable",
-        importpath = "github.com/Venafi/vcert",
-        sum = "h1:NJAdo/WFLH379JH6d4OtLkrsYFithHfBEn0DNTUm3YE=",
-        version = "v0.0.0-20191221002246-e3ef066044b1",
+        importpath = "github.com/Spazzy757/vcert",
+        sum = "h1:KeaZt2RY7LmOaPe9RRwH9H3ywvt5Gk4D96+IdaQ61fY=",
+        version = "v0.0.0-20200204120343-5b3d974663b5",
     )
     go_repository(
         name = "com_github_xiang90_probing",
@@ -1719,8 +1719,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "gopkg.in/ini.v1",
-        sum = "h1:GyboHr4UqMiLUybYjd22ZjQIKEJEpgtLXtuGbR21Oho=",
-        version = "v1.51.1",
+        sum = "h1:j+Lt/M1oPPejkniCg1TkWE2J3Eh1oZTsHSXzMTzUXn4=",
+        version = "v1.52.0",
     )
     go_repository(
         name = "in_gopkg_mgo_v2",

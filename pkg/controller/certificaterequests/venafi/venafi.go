@@ -19,7 +19,7 @@ package venafi
 import (
 	"context"
 
-	"github.com/Venafi/vcert/pkg/endpoint"
+	"github.com/Spazzy757/vcert/pkg/endpoint"
 	k8sErrors "k8s.io/apimachinery/pkg/api/errors"
 	corelisters "k8s.io/client-go/listers/core/v1"
 

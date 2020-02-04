@@ -17,9 +17,9 @@ limitations under the License.
 package fake
 
 import (
-	"github.com/Venafi/vcert/pkg/certificate"
-	"github.com/Venafi/vcert/pkg/endpoint"
-	"github.com/Venafi/vcert/pkg/venafi/fake"
+	"github.com/Spazzy757/vcert/pkg/certificate"
+	"github.com/Spazzy757/vcert/pkg/endpoint"
+	"github.com/Spazzy757/vcert/pkg/venafi/fake"
 )
 
 type Connector struct {
