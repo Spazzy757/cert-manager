@@ -1647,8 +1647,8 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "github.com/Spazzy757/vcert",
-        sum = "h1:KeaZt2RY7LmOaPe9RRwH9H3ywvt5Gk4D96+IdaQ61fY=",
-        version = "v0.0.0-20200204120343-5b3d974663b5",
+        sum = "h1:U5Wrc8HG/v+ZD6KG2RPfxh2CQksZMgFmZIBZ/Dh0H5Y="
+        version = "v0.0.0-20200206090938-1f431287a5aa",
     )
     go_repository(
         name = "com_github_xiang90_probing",
