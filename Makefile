@@ -14,7 +14,7 @@
 
 # Set DOCKER_REPO to customise the image docker repo, e.g. "quay.io/jetstack"
 DOCKER_REPO := spazzy757
-APP_VERSION := latest
+APP_VERSION := V1.0.3
 HACK_DIR ?= hack
 
 SKIP_GLOBALS := false

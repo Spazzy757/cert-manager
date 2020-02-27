@@ -1647,7 +1647,7 @@ def go_repositories():
         build_file_generation = "on",
         build_file_proto_mode = "disable",
         importpath = "github.com/Spazzy757/vcert",
-        sum = "h1:U5Wrc8HG/v+ZD6KG2RPfxh2CQksZMgFmZIBZ/Dh0H5Y="
+        sum = "h1:U5Wrc8HG/v+ZD6KG2RPfxh2CQksZMgFmZIBZ/Dh0H5Y=",
         version = "v0.0.0-20200206090938-1f431287a5aa",
     )
     go_repository(

@@ -35,7 +35,7 @@ var (
 )
 
 func DefaultItemBasedRateLimiter() workqueue.RateLimiter {
-	return workqueue.NewItemExponentialFailureRateLimiter(time.Second*5, time.Minute*5)
+	return workqueue.NewItemExponentialFailureRateLimiter(time.Second*5, time.Day*5)
 }
 
 func HandleOwnedResourceNamespacedFunc(log logr.Logger, queue workqueue.RateLimitingInterface, ownerGVK schema.GroupVersionKind, get func(namespace, name string) (interface{}, error)) func(obj interface{}) {
